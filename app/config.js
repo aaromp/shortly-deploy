@@ -3,7 +3,8 @@
 var path = require('path');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/word-sentence');
+var Schema = mongoose.Schema;
+mongoose.connect('mongodb://localhost/db');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback () {
@@ -26,8 +27,7 @@ db.once('open', function callback () {
 //   }
 // });
 
-var urls = mongoose.Schema({
-  id: Number,
+db.urlsSchema = new Schema({
   url: String,
   base_url: String,
   code: String,
@@ -35,8 +35,7 @@ var urls = mongoose.Schema({
   visits: Number
 });
 
-var users = mongoose.Schema({
-  id: Number,
+db.usersSchema = new Schema({
   username: String,
   password: String,
   timestamp: Date
