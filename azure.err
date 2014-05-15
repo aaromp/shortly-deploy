@@ -1,0 +1,30 @@
+Wed May 14 2014 17:16:42 GMT-0700 (PDT):
+{ [Error: Unable to locate site named shortestly-config]
+  stack: [Getter/Setter],
+  __frame: 
+   { name: 'lookupSiteNameAndWebSpace__18',
+     line: 834,
+     file: '/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js',
+     prev: 
+      { name: 'ensureRepositoryUri__15',
+        line: 763,
+        file: '/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js',
+        prev: [Object],
+        active: false,
+        offset: 3,
+        col: 19 },
+     active: false,
+     offset: 12,
+     col: 4 },
+  rawStack: [Getter] }
+Error: Unable to locate site named shortestly-config
+    at ___ (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:830:20)
+    at ___ (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/node_modules/streamline/lib/callbacks/runtime.js:85:13)
+    at ___ (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:469:131)
+    at __tryCatch (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/node_modules/streamline/lib/callbacks/runtime.js:141:4)
+    at ___ (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:469:67)
+    at getSites__6 (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:469:33)
+    at lookupSiteNameAndWebSpace__18 (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:846:4)
+    at ensureRepositoryUri__15 (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:766:19)
+    at __2 (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/site.log._js:94:26)
+
