@@ -3,6 +3,8 @@ var crypto = require('crypto');
 
 var Link = db.model('link', db.urlsSchema);
 
+
+
 // var Link = db.Model.extend({
 //   tableName: 'urls',
 //   hasTimestamps: true,
